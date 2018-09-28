@@ -1,0 +1,30 @@
+
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Django</title>
+	<!-- CSS -->
+	<link rel="stylesheet"  href="{% static 'css/blog.css' %}">
+	 <!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+  	<!-- Compiled and minified JavaScript -->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+   
+
+</head>
+<body>
+	<h1>Django Rômulo!</h1>
+	<div class="content container">
+    <div class="row">
+        <div class="col-md-8">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+</div>
+</body>
+</html>
